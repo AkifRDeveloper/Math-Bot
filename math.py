@@ -44,6 +44,11 @@ async def divide(ctx, left: int, right: int):
     """divides two numbers together."""
     await ctx.send(left / right)
 
+@bot.command()
+async def power(ctx, left: int, right: int):
+    """power two numbers together."""
+    await ctx.send(left ** right)
+
 bot.run("")
 
 
